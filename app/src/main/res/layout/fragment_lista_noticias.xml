@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeToRefresh">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"/>
+
+            <TextView
+
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destacado"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/noticia_principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v4.widget.Space
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/noticia_destacada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/noticia_destacada_imagen"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop" />
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/noticia_destacada_titular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:maxLines="3"
+                        android:ellipsize="end"/>
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="20dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/botonesCompartir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/twitter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#3da9f5"
+                            android:src="@drawable/ic_twitter" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent" />
+
+                        <ImageButton
+                            android:id="@+id/facebook"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#385199"
+                            android:src="@drawable/ic_facebook" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent" />
+
+                        <ImageButton
+                            android:id="@+id/mail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/holo_red_light"
+                            android:src="@drawable/ic_mail_white_24dp" />
+                    </LinearLayout>
+
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="20dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+
+
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Más noticias"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.apps.dsb.radioadaja.NonScrollGridView
+                    android:id="@+id/lista_noticias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="2"
+                    android:layout_weight="1"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>
+

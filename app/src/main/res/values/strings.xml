@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Radio Adaja</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_radio">Radio en directo</string>
+    <string name="title_podcast">Podcasts</string>
+    <string name="title_info">Radio Adaja</string>
+    <string name="developer_name">David Sánchez Barragán</string>
+    <string name="developer_mail">davidsanchezbarragan@gmail.com</string>
+    <string name="developer_twitter">https://twitter.com/dsb_97/</string>
+    <string name="URLStream">http://173.236.61.226/stream</string>
+    <string name="URLWeb">http://www.radioadaja.es</string>
+    <string name="compartir">Compartir</string>
+</resources>

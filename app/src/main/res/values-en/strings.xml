@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Adaja Radio</string>
+    <string name="title_home">Home</string>
+    <string name="title_radio">Live radio</string>
+    <string name="title_podcast">Podcasts</string>
+    <string name="title_info">Adaja Radio</string>
+    <string name="developer_name">David Sánchez Barragán</string>
+    <string name="developer_mail">davidsanchezbarragan@gmail.com</string>
+    <string name="developer_twitter">https://twitter.com/dsb_97/</string>
+    <string name="compartir">Share</string>
+</resources>
